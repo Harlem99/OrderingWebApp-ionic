@@ -1,0 +1,2 @@
+# OrderingWebApp-ionic
+基于ionic和angularJs的点餐webapp
