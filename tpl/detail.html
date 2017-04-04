@@ -1,0 +1,33 @@
+
+<div ng-include="'tpl/include/header.html'"></div>
+
+<ion-content class="has-header has-footer">
+    <div class="card">
+      <div class="item item-divider">
+        <a href="#/kfl_start">首页</a> / 详情
+      </div>
+      <div class="item item-text-wrap">
+        <h2>{{dish.name}}</h2>
+        <img class="img-responsive" ng-src="img/{{dish.img_lg}}" alt=""/>
+        <p>{{dish.detail}}</p>
+        <hr/>
+        <p>{{dish.material}}</p>
+        <p>{{dish.price}}</p>
+      </div>
+      <div class="item item-divider text-right">
+        <!--ng-click="jump('order',{id:dish.did})"-->
+        <button
+          ng-click="addToCart()"
+          class="button button-balanced button-small">
+          添加到购物车
+        </button>
+        <button
+          ng-click="jump('main')"
+          class="button button-energized button-small">
+          我再看看
+        </button>
+      </div>
+    </div>
+</ion-content>
+
+<div ng-include="'tpl/include/footer.html'"></div>
